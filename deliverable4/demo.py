@@ -452,9 +452,9 @@ def demo_integration():
         
         # Add some processes
         processes = [
-            Process(name="Process_A", burst_time=5, priority=3),
-            Process(name="Process_B", burst_time=3, priority=1),
-            Process(name="Process_C", burst_time=4, priority=2),
+            Process(pid=1, name="Process_A", burst_time=5, priority=3),
+            Process(pid=2, name="Process_B", burst_time=3, priority=1),
+            Process(pid=3, name="Process_C", burst_time=4, priority=2),
         ]
         
         for p in processes:
